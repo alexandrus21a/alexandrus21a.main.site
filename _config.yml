@@ -1,0 +1,45 @@
+# Site
+name: "AJSB"
+description: "AJSB"
+logo: "assets/images/logo.png"
+favicon: "assets/images/favicon.ico"
+email: "alexandrus21dev@yahoo.com"
+mailchimp-list: "https://alexandrus21a.us11."
+
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+authors:
+  alexandrus21a:
+    name: alexandrus21a
+    site: https://alexandrus21a.vercel.app
+    avatar: /assets/images/avatar.png
+    bio: "Blogger, photograph, web designer, front-end developer!"
+    email: alexandrus21dev@yahoo.com
+    twitter: https://twitter.com/alexandrus21
+
+# Defaults
+defaults:
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: alexandrus21a
+      avatar: /assets/images/avatar.png
+
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+
+# Paginate
+paginate: 10
